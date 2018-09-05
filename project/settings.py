@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_crontab',
     'cron',
 ]
 
@@ -104,7 +103,7 @@ AUTH_PASSWORD_VALIDATORS = [
 DEFAULT_FROM_EMAIL = 'admin@local.host'
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'bl3z3'
-EMAIL_HOST_PASSWORD = 'password2018'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 
@@ -126,7 +125,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-
-CRONJOBS = [
-    ('*/20 * * * *', 'django.core.management.email_reminder'),
-]
