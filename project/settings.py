@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cron',
 ]
 
 MIDDLEWARE = [
@@ -99,6 +100,12 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+DEFAULT_FROM_EMAIL = 'admin@local.host'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'bl3z3'
+EMAIL_HOST_PASSWORD = 'password2018'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
